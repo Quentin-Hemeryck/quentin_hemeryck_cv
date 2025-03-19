@@ -67,10 +67,50 @@ body {
     margin-bottom: 12px;
 }
 
+.contact-item a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #4ECDC4; 
+    text-decoration: underline;
+}
+
 .contact-icon {
     width: 20px;
     margin-right: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon img {
+    width: 100%;
+    height: auto;
+    max-width: 20px;
+    max-height: 20px;
+    filter: brightness(0) invert(1); /* Rend les icônes blanches */
+}
+
+/* Style pour le lien LinkedIn */
+.linkedin-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+    color: #0077B5; /* Couleur bleue de LinkedIn */
+    text-decoration: underline;
+}
+
+/* Surcharge pour l'icône LinkedIn afin de la rendre cliquable */
+.contact-icon a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 /* Lists in sidebar */
