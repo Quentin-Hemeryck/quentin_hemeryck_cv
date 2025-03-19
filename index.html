@@ -8,53 +8,45 @@
 </head>
 <body>
     <div class="cv-container">
+        <div class="print-button">
+            <img src="img/printer.png" alt="Imprimer">
+        </div>
+        
         <!-- Sidebar gauche -->
-        <div class="sidebar">
+        <aside class="sidebar">
             <div class="photo-container">
                 <img src="img/photo.png" alt="Photo Quentin Hemeryck">
             </div>
             
             <h2>Contact</h2>
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <a href="+32 497 69 82 09">
-                        <img src="img/phone.png" alt="Téléphone">
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <a href="tel:+32497698209" class="contact-link">
+                        <img src="img/phone.png" alt="Téléphone" class="contact-icon">
+                        +32 497 69 82 09
                     </a>
-                </div>
-                <div><a href="+32 497 69 82 09">+32 497 69 82 09</a></div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <a href="mailto:quentinhemeryck@hotmail.com">
-                        <img src="img/mail.png" alt="Email">
+                </li>
+                <li class="contact-item">
+                    <a href="mailto:quentinhemeryck@hotmail.com" class="contact-link">
+                        <img src="img/mail.png" alt="Email" class="contact-icon">
+                        quentinhemeryck@hotmail.com
                     </a>
-                </div>
-                <div><a href="mailto:quentinhemeryck@hotmail.com">quentinhemeryck@hotmail.com</a></div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <img src="img/pin.png" alt="Localisation">
-                </div>
-                <div>La Louvière</div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <img src="img/sedan.png" alt="Permis">
-                </div>
-                <div>Permis B</div>
-            </div>
-            <div class="contact-item">
-                <div class="contact-icon">
-                    <a href="https://www.linkedin.com/in/quentin-hemeryck-64ba65348/" target="_blank">
-                        <img src="img/linkedin.png" alt="LinkedIn">
-                    </a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/quentin-hemeryck-64ba65348/" target="_blank" class="linkedin-link">
+                </li>
+                <li class="contact-item">
+                    <img src="img/pin.png" alt="Localisation" class="contact-icon">
+                    La Louvière
+                </li>
+                <li class="contact-item">
+                    <img src="img/car.png" alt="Permis" class="contact-icon">
+                    Permis B
+                </li>
+                <li class="contact-item">
+                    <a href="https://www.linkedin.com/in/quentin-hemeryck-64ba65348/" target="_blank" class="contact-link linkedin-link">
+                        <img src="img/linkedin.png" alt="LinkedIn" class="contact-icon">
                         Quentin Hemeryck
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
             
             <h2>Centres d'intérêts</h2>
             <ul>
@@ -77,46 +69,52 @@
             </ul>
             
             <h2>Langues</h2>
-            <div class="languages-item">
-                <div class="language-name">Français :</div>
-                <div class="language-level">Langue maternelle</div>
-            </div>
-            <div class="languages-item">
-                <div class="language-name">Anglais :</div>
-                <div class="language-level">Lecture et orale OK</div>
-            </div>
-            <div class="languages-item">
-                <div class="language-name">Néerlandais :</div>
-                <div class="language-level">Notions de base</div>
-            </div>
-        </div>
+            <ul class="languages-list">
+                <li class="languages-item">
+                    <span class="language-name">Français :</span>
+                    <span class="language-level">Langue maternelle</span>
+                </li>
+                <li class="languages-item">
+                    <span class="language-name">Anglais :</span>
+                    <span class="language-level">Lecture et orale OK</span>
+                </li>
+                <li class="languages-item">
+                    <span class="language-name">Néerlandais :</span>
+                    <span class="language-level">Notions de base</span>
+                </li>
+            </ul>
+        </aside>
         
         <!-- Contenu principal -->
-        <div class="main-content">
+        <main class="main-content">
             <div class="name-section">
                 <h1>QUENTIN <span>HEMERYCK</span></h1>
             </div>
             
             <!-- Section profil -->
-            <h2>Profil</h2>
-            <div class="profil-content">
-                Étudiant en informatique spécialisé en <span>télécommunications, réseaux et cybersécurité</span>, je cherche un stage pour appliquer mes compétences en gestion et sécurisation des réseaux ainsi qu'en prévention des cyberattaques. Passionné et rigoureux, je souhaite mettre en pratique mes acquis dans un environnement professionnel.
-            </div>
+            <section>
+                <h2>Profil</h2>
+                <p class="profil-content">
+                    Étudiant en informatique spécialisé en <span>télécommunications, réseaux et cybersécurité</span>, je cherche un stage pour appliquer mes compétences en gestion et sécurisation des réseaux ainsi qu'en prévention des cyberattaques. Passionné et rigoureux, je souhaite mettre en pratique mes acquis dans un environnement professionnel.
+                </p>
+            </section>
             
             <!-- Compétences techniques -->
-            <h2>Compétences techniques</h2>
-            <div class="competences-item">
-                <div class="competence-title">Réseaux & Sécurité :</div>
-                <div class="competence-desc">Gestion des infrastructures réseau, configuration et sécurisation des équipements, identification et correction des vulnérabilités.</div>
-            </div>
-            <div class="competences-item">
-                <div class="competence-title">Administration & Gestion de Projet :</div>
-                <div class="competence-desc">Maintenance des systèmes, bases en développement et bases de données, avec une expertise en organisation et coordination de projets techniques.</div>
-            </div>
+            <section>
+                <h2>Compétences techniques</h2>
+                <div class="competences-item">
+                    <div class="competence-title">Réseaux & Sécurité :</div>
+                    <div class="competence-desc">Gestion des infrastructures réseau, configuration et sécurisation des équipements, identification et correction des vulnérabilités.</div>
+                </div>
+                <div class="competences-item">
+                    <div class="competence-title">Administration & Gestion de Projet :</div>
+                    <div class="competence-desc">Maintenance des systèmes, bases en développement et bases de données, avec une expertise en organisation et coordination de projets techniques.</div>
+                </div>
+            </section>
             
             <!-- Expériences -->
-            <h2>Expériences professionnelle</h2>
-            <div class="experiences-section">
+            <section>
+                <h2>Expériences professionnelle</h2>
                 <div class="experience-item">
                     <div class="header-flex">
                         <div class="job-title">Préparateur de commande</div>
@@ -137,42 +135,39 @@
                     <div class="company-name">LIDL</div>
                     <ul class="experience-list">
                         <li><strong>Préparation des commandes :</strong> Préparation des commandes via système VOICE en environnement frais.</li>
-                        <li><strong>Support logistique</strong>polyvalent (secteur sec et frais).</li>
+                        <li><strong>Support logistique</strong> polyvalent (secteur sec et frais).</li>
                     </ul>
                 </div>
-            </div>
+            </section>
             
             <!-- Formations -->
-            <h2>Formations</h2>
-            <div class="formation-item">
-                <div class="header-flex">
+            <section>
+                <h2>Formations</h2>
+                <div class="formation-item">
                     <div class="school-name">• École communale des CRACS, Houdeng-Goegnies - CEB</div>
+                    <div class="school-address">Chaussée Houtart 316, 7110 Houdeng-Goegnies</div>
+                    <div class="formation-date">sept 2012 - juin 2017</div>
                 </div>
-                <div class="school-address">Chaussée Houtart 316, 7110 Houdeng-Goegnies</div>
-                <div class="formation-date">sept 2012 - juin 2017</div>
-            </div>
-            
-            <div class="formation-item">
-                <div class="header-flex">
+                
+                <div class="formation-item">
                     <div class="school-name">• Athénée Royal La Louvière, La Louvière - CESS</div>
+                    <div class="school-address">Rue de Bouvy 89, 7100 La Louvière</div>
+                    <div class="formation-date">sept 2017 - juin 2023</div>
                 </div>
-                <div class="school-address">Rue de Bouvy 89, 7100 La Louvière</div>
-                <div class="formation-date">sept 2017 - juin 2023</div>
-            </div>
-            
-            <div class="formation-item">
-                <div class="header-flex">
+                
+                <div class="formation-item">
                     <div class="school-name">• Haute École en Hainaut, Mons - Bachelier en informatique</div>
+                    <div class="school-address">Av. Victor Maistriau 8, 7000 Mons</div>
+                    <div class="formation-date">sept 2023 - juin 2026</div>
                 </div>
-                <div class="school-address">Av. Victor Maistriau 8, 7000 Mons</div>
-                <div class="formation-date">sept 2023 - juin 2026</div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
     
-    <!-- Footer avec copyright -->
     <footer class="cv-footer">
         © Quentin Hemeryck - 2025
     </footer>
+    
+    <script src="Scripts/index.js"></script>
 </body>
 </html>
