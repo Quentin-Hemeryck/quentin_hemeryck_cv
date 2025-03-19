@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(84, 84, 84);
+}
+
+.cv-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 32%;
+    background-color: #2D2D2D;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Photo container - optimisé */
+.photo-container {
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    background-color: #BCBEBD;
+    aspect-ratio: 1/1;
+    max-width: 220px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Section headers in sidebar */
+.sidebar h2 {
+    color: white;
+    margin: 30px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid white;
+    padding-bottom: 8px;
+}
+
+/* Contact items */
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.contact-icon {
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Lists in sidebar */
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li::before {
+    content: "•";
+    margin-right: 10px;
+    color: white;
+}
+
+/* Languages */
+.languages-item {
+    margin-bottom: 8px;
+}
+
+.language-name {
+    font-weight: 600;
+}
+
+.language-level {
+    font-style: italic;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+/* Main content */
+.main-content {
+    width: 68%;
+    padding: 20px 30px;
+    background-color: white;
+    color: #333;
+}
+
+/* Name section */
+.name-section {
+    margin: 30px 0;
+}
+
+.name-section h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+}
+
+.name-section h1 span {
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+/* Section headers in main content */
+.main-content h2 {
+    text-transform: uppercase;
+    color: #333;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: #f9f9f9;
+    padding: 8px 15px;
+    margin: 25px 0 15px 0;
+    border-left: 4px solid #2D2D2D;
+}
+
+/* Profil section */
+.profil-content {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.profil-content span {
+    color: #2D2D2D;
+    font-weight: 600;
+}
+
+/* Technical skills */
+.competences-item {
+    margin-bottom: 15px;
+}
+
+.competence-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #2D2D2D;
+}
+
+.competence-desc {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Experiences */
+.experiences-section {
+    margin-bottom: 25px;
+}
+
+.experience-item {
+    margin-bottom: 15px;
+}
+
+.job-title {
+    font-weight: 600;
+    color: #2D2D2D;
+}
+
+.company-name {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.experience-date {
+    font-style: italic;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.experience-list {
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+.experience-list li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Formations */
+.formation-item {
+    margin-bottom: 15px;
+}
+
+.school-name {
+    font-weight: 600;
+    color: #2D2D2D;
+}
+
+.school-location {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.school-address {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.formation-date {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 3px;
+}
+
+/* Headers layout */
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Footer avec copyright */
+.cv-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2D2D2D;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}
