@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-/* initalisation de particles.js */
+/* Script JS pour les particules */
 
 document.addEventListener('DOMContentLoaded', function() {
     particlesJS("particles-js", {
