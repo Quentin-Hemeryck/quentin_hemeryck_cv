@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
+/* Configuration globale du site */
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,7 @@
     color-adjust: exact;
 }
 
+/* Style du corps du site */
 body {
     background-color: #232323;
     min-width: 320px;
@@ -28,6 +30,7 @@ body {
     z-index: 0;
 }
 
+/* Conteneur principal du CV */
 .cv-container {
     display: flex;
     width: 100%;
@@ -68,7 +71,7 @@ body {
     filter: brightness(0) invert(1);
 }
 
-/* Sidebar */
+/* Barre latérale gauche */
 .sidebar {
     width: 32%;
     background-color: #2D2D2D;
@@ -78,7 +81,7 @@ body {
     flex-direction: column;
 }
 
-/* Photo container */
+/* Conteneur de la photo de profil */
 .photo-container {
     width: 80%;
     margin: 20px auto;
@@ -95,7 +98,7 @@ body {
     object-fit: cover;
 }
 
-/* Section headers in sidebar */
+/* Titres des sections */
 h2 {
     margin: 25px 0 15px 0;
     text-transform: uppercase;
@@ -109,7 +112,7 @@ h2 {
     padding-bottom: 8px;
 }
 
-/* Contact items */
+/* Liste des contacts */
 .contact-list {
     list-style-type: none;
 }
@@ -120,6 +123,7 @@ h2 {
     margin-bottom: 12px;
 }
 
+/* Style des liens de contact */
 .contact-link {
     color: white;
     text-decoration: none;
@@ -133,6 +137,7 @@ h2 {
     text-decoration: underline;
 }
 
+/* Icônes de contact */
 .contact-icon {
     width: 20px;
     margin-right: 10px;
@@ -143,7 +148,7 @@ h2 {
     color: #0077B5;
 }
 
-/* Lists in sidebar */
+/* Listes dans la barre latérale */
 .sidebar ul {
     list-style-type: none;
 }
@@ -157,7 +162,7 @@ h2 {
     margin-right: 10px;
 }
 
-/* Languages */
+/* Liste des langues */
 .languages-list {
     list-style-type: none;
 }
@@ -176,7 +181,7 @@ h2 {
     opacity: 0.9;
 }
 
-/* Main content */
+/* Contenu principal du CV */
 .main-content {
     width: 68%;
     padding: 20px 30px;
@@ -184,7 +189,7 @@ h2 {
     color: #333;
 }
 
-/* Name section */
+/* Section nom et prénom */
 .name-section {
     margin: 30px 0;
 }
@@ -200,7 +205,7 @@ h2 {
     color: #1A1A1A;
 }
 
-/* Section headers in main content */
+/* Titres des sections du contenu principal */
 .main-content h2 {
     color: #333;
     background-color: #f9f9f9;
@@ -208,7 +213,7 @@ h2 {
     border-left: 4px solid #2D2D2D;
 }
 
-/* Profil section */
+/* Section profil */
 .profil-content {
     margin-bottom: 20px;
     font-size: 14px;
@@ -220,7 +225,7 @@ h2 {
     font-weight: 600;
 }
 
-/* Technical skills */
+/* Section compétences techniques */
 .competences-item {
     margin-bottom: 15px;
 }
@@ -236,7 +241,7 @@ h2 {
     line-height: 1.5;
 }
 
-/* Experiences */
+/* Section expériences professionnelles */
 .experience-item {
     margin-bottom: 15px;
 }
@@ -267,7 +272,7 @@ h2 {
     font-size: 14px;
 }
 
-/* Formations */
+/* Section formations */
 .formation-item {
     margin-bottom: 15px;
 }
@@ -288,7 +293,7 @@ h2 {
     margin-top: 3px;
 }
 
-/* Headers layout */
+/* Disposition des en-têtes */
 .header-flex {
     display: flex;
     justify-content: space-between;
@@ -298,7 +303,7 @@ h2 {
     gap: 5px;
 }
 
-/* Footer */
+/* Pied de page */
 .cv-footer {
     text-align: center;
     padding: 15px 0;
@@ -340,7 +345,6 @@ h2 {
         display: none;
     }
     
-    /* Masquer les particules à l'impression */
     #particles-js {
         display: none;
     }
