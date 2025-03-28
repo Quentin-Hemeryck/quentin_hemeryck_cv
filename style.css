@@ -102,7 +102,7 @@ body {
 h2 {
     margin: 25px 0 15px 0;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 1px;
 }
 
@@ -177,7 +177,7 @@ h2 {
 
 .language-level {
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     opacity: 0.9;
 }
 
@@ -195,7 +195,7 @@ h2 {
 }
 
 .name-section h1 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 400;
     color: #333;
 }
@@ -216,7 +216,7 @@ h2 {
 /* Section profil */
 .profil-content {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.5;
 }
 
@@ -237,7 +237,7 @@ h2 {
 }
 
 .competence-desc {
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 1.5;
 }
 
@@ -258,7 +258,7 @@ h2 {
 
 .experience-date {
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     text-align: right;
 }
 
@@ -269,7 +269,7 @@ h2 {
 
 .experience-list li {
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /* Section formations */
@@ -282,14 +282,19 @@ h2 {
     color: #2D2D2D;
 }
 
+.long-diploma {
+    word-break: break-word;
+    line-height: 1.4;
+}
+
 .school-address {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 3px;
 }
 
 .formation-date {
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.9rem;
     margin-top: 3px;
 }
 
@@ -309,12 +314,12 @@ h2 {
     padding: 15px 0;
     background-color: #2D2D2D;
     color: white;
-    font-size: 14px;
+    font-size: 0.875rem;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    z-index: 1; /* Au-dessus du conteneur de particules */
+    z-index: 1;
 }
 
 /* Media Queries */
@@ -323,7 +328,7 @@ h2 {
         size: A4;
         margin: 0;
     }
-    
+
     html, body {
         width: 210mm;
         height: 297mm;
@@ -331,7 +336,7 @@ h2 {
         padding: 0;
         background-color: white;
     }
-    
+
     .cv-container {
         width: 100%;
         height: 100%;
@@ -340,47 +345,50 @@ h2 {
         padding: 0;
         box-shadow: none;
     }
-    
+
     .print-button {
         display: none;
     }
-    
+
     #particles-js {
         display: none;
     }
-    
+
     .sidebar {
         padding: 15px;
         width: 32%;
         background-color: #2D2D2D !important;
     }
-    
+
     .main-content {
         padding: 15px 20px;
         width: 68%;
     }
-    
+
     .cv-footer {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
     }
-    
+
     body {
-        font-size: 11px;
+        font-size: 0.6875rem;
     }
-    
+
     h1 {
-        font-size: 20px !important;
+        font-size: 1.25rem !important;
     }
-    
+
     h2 {
-        font-size: 13px !important;
+        font-size: 0.8125rem !important;
     }
-    
-    .profil-content, .competence-desc, .experience-list li, .school-address {
-        font-size: 10px;
+
+    .profil-content,
+    .competence-desc,
+    .experience-list li,
+    .school-address {
+        font-size: 0.625rem;
     }
 }
 
@@ -388,28 +396,28 @@ h2 {
     .cv-container {
         flex-direction: column;
     }
-    
+
     .sidebar, .main-content {
         width: 100%;
         padding: 15px;
     }
-    
+
     .photo-container {
         max-width: 180px;
     }
-    
+
     .header-flex {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .experience-date {
         text-align: left;
         margin-top: 5px;
     }
-    
+
     .name-section h1 {
-        font-size: 24px;
+        font-size: 1.5rem; 
         text-align: center;
     }
 }
@@ -418,15 +426,15 @@ h2 {
     .sidebar, .main-content {
         padding: 10px;
     }
-    
+
     .name-section h1 {
-        font-size: 20px;
+        font-size: 1.25rem; 
     }
-    
+
     h2 {
-        font-size: 14px;
+        font-size: 0.875rem; 
     }
-    
+
     .photo-container {
         max-width: 140px;
     }
