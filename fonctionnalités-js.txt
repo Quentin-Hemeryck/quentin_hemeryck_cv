@@ -1,0 +1,6 @@
+Fonctionnalités JavaScript intégrées dans le site :
+
+• Particules d’arrière-plan animées via particles.js.
+• Bouton d’impression du CV.
+• Script d’initialisation des particules via scripts/index.js.
+• Affichage de la hauteur du site dans la console (utile pour le debug).
